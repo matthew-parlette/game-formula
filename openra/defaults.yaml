@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
 openra:
   server:
     image: rmoriz/openra
@@ -8,6 +10,3 @@ openra:
     mod: ra
     title: My OpenRA Server
     motd: 'Welcome!'
-    password: mypassword
-    # map id from http://resource.openra.net/maps/
-    map: dd7d4004a9a518d68dd09270fba0ce13b22173e4
