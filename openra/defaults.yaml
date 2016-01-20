@@ -2,7 +2,7 @@
 # vim: ft=yaml
 openra:
   server:
-    image: rmoriz/openra
+    image: johannesw/openra
     name: openra-server
     port: 1234
     advertise: False
