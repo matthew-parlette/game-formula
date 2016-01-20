@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+# vim: ft=jinja
+
+{% import_yaml 'minecraft/defaults.yaml' as default_settings %}
+
+{% set os_family_map = salt['grains.filter_by']({
+        'Debian': {},
+        'Suse': {},
+        'Arch': {},
+        'RedHat': {},
+  }
+  , grain="os_family"
+  , merge=salt['pillar.get']('minecraft:lookup'))
+%}
+{% do default_settings.minecraft.update(os_family_map) %}
+
+{## Merge in minecraft:lookup pillar ##}
+{% set minecraft = salt['pillar.get'](
+        'minecraft',
+        default=default_settings.minecraft,
+        merge=True
+    )
+%}
