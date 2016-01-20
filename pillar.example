@@ -11,3 +11,15 @@ openra:
     password: mypassword
     # map id from http://resource.openra.net/maps/
     map: dd7d4004a9a518d68dd09270fba0ce13b22173e4
+
+minecraft:
+  server:
+    image: itzg/minecraft-server
+    name: minecraft-server
+    port: 25565
+    ops: ''
+    mode: survival
+    motd: 'Welcome!'
+    pvp: 'true'
+    version: LATEST
+    path: /path/to/server/dir

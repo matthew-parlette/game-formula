@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+minecraft:
+  server:
+    image: itzg/minecraft-server
+    name: minecraft-server
+    port: 25565
+    ops: ''
+    mode: survival
+    motd: 'Welcome!'
+    pvp: 'true'
+    version: LATEST

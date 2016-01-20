@@ -16,3 +16,10 @@ Available States
 Download and run an [OpenRA](http://www.openra.net) dedicated server as a docker container.
 
 Be sure to forward port 1234 to this server.
+
+``minecraft.server``
+--------------------
+
+Run a minecraft server in a docker container.
+
+This uses port 25565 by default.
