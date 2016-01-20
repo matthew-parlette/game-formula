@@ -23,3 +23,13 @@ Be sure to forward port 1234 to this server.
 Run a minecraft server in a docker container.
 
 This uses port 25565 by default.
+
+``minecraft.map.host``
+----------------------
+
+Host the rendered minecraft map via nginx in a container.
+
+``minecraft.map.render``
+------------------------
+
+Spawn a container to render the current minecraft map.

@@ -23,3 +23,6 @@ minecraft:
     pvp: 'true'
     version: LATEST
     path: /path/to/server/dir
+  map:
+    render:
+      path: /path/to/save/rendered/map

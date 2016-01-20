@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "minecraft/map.jinja" import minecraft with context %}
+{% from "minecraft/server/map.jinja" import minecraft with context %}
 
 {{ minecraft.server.path }}:
   file.directory:
