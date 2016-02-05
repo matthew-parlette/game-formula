@@ -6,8 +6,9 @@
 include:
   - minecraft.map
 
-{{ minecraft.server.path }}:
+minecraft-map-render-server-path:
   file.directory:
+    - name: {{ minecraft.server.path }}
     - makedirs: True
 
 davenonne/mapcrafter:
@@ -21,6 +22,6 @@ minecraft-map-render:
       - {{ minecraft.server.path }}/world:/world
       - {{ minecraft.map.render.path }}:/www
     - require:
-      - file: {{ minecraft.server.path }}
+      - file: minecraft-map-render-server-path
       - file: {{ minecraft.map.render.path }}
       - dockerng: davenonne/mapcrafter
